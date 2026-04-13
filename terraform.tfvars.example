@@ -1,0 +1,14 @@
+# Copy this file to terraform.tfvars and fill in real values.
+# terraform.tfvars is git-ignored — never commit real secrets.
+
+subscription_id         = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+vm_admin_username       = "azureadmin"
+vm_admin_ssh_public_key = "ssh-rsa AAAA..."
+
+# Optional overrides (defaults are set in variables.tf)
+# vm_size                  = "Standard_B2s"
+# vnet_address_space       = "10.0.0.0/16"
+# subnet_firewall_cidr     = "10.0.0.0/26"
+# subnet_bastion_cidr      = "10.0.1.0/26"
+# subnet_confidential_cidr = "10.0.2.0/24"
+# subnet_work_cidr         = "10.0.3.0/24"
