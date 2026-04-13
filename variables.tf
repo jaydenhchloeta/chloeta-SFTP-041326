@@ -10,12 +10,6 @@ variable "location_eus" {
   default     = "eastus"
 }
 
-variable "location_cus" {
-  description = "Secondary Central US location"
-  type        = string
-  default     = "centralus"
-}
-
 # ── Network CIDRs ─────────────────────────────────────────────────────────────
 variable "vnet_address_space" {
   description = "Address space for the SFTP virtual network"

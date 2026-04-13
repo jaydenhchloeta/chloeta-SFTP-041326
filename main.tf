@@ -1,7 +1,3 @@
-module "communication" {
-  source = "./modules/communication"
-}
-
 module "sftp_network" {
   source = "./modules/sftp_network"
 
@@ -34,10 +30,4 @@ module "sftp_vms" {
   law_id                  = module.sftp_security.law_id
 
   depends_on = [module.sftp_network, module.sftp_security]
-}
-
-module "automation" {
-  source = "./modules/automation"
-
-  location = var.location_cus
 }
