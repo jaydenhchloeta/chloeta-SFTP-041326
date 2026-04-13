@@ -48,12 +48,6 @@ variable "vm_admin_username" {
   default     = "azureadmin"
 }
 
-variable "vm_admin_password" {
-  description = "Admin password for all SFTP VMs"
-  type        = string
-  sensitive   = true
-}
-
 variable "vm_size" {
   description = "VM size for SFTP virtual machines"
   type        = string

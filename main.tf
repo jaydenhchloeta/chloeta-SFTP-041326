@@ -20,14 +20,14 @@ module "sftp_security" {
 module "sftp_vms" {
   source = "github.com/jaydendh/terraform-modules//azure/chloeta-sftp-environment/sftp_vms?ref=main"
 
-  location                = var.location_eus
-  subnet_confidential_id  = module.sftp_network.subnet_confidential_id
-  subnet_work_id          = module.sftp_network.subnet_work_id
-  vm_admin_username       = var.vm_admin_username
-  vm_admin_password       = var.vm_admin_password
-  vm_size                 = var.vm_size
-  vm_image                = var.vm_image
-  law_id                  = module.sftp_security.law_id
+  location               = var.location_eus
+  subnet_confidential_id = module.sftp_network.subnet_confidential_id
+  subnet_work_id         = module.sftp_network.subnet_work_id
+  vm_admin_username      = var.vm_admin_username
+  key_vault_id           = module.sftp_security.key_vault_id
+  vm_size                = var.vm_size
+  vm_image               = var.vm_image
+  law_id                 = module.sftp_security.law_id
 
   depends_on = [module.sftp_network, module.sftp_security]
 }
