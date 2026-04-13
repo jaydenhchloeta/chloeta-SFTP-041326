@@ -1,5 +1,5 @@
 module "sftp_network" {
-  source = "./modules/sftp_network"
+  source = "github.com/jaydendh/chloeta-terraform-modules//sftp_network?ref=main"
 
   location                 = var.location_eus
   vnet_address_space       = var.vnet_address_space
@@ -11,14 +11,14 @@ module "sftp_network" {
 
 # Security is created first — VMs reference the LAW ID for AMA extension
 module "sftp_security" {
-  source = "./modules/sftp_security"
+  source = "github.com/jaydendh/chloeta-terraform-modules//sftp_security?ref=main"
 
   location             = var.location_eus
   rg_confidential_name = "rg-IT-sftp-confidential-eus"
 }
 
 module "sftp_vms" {
-  source = "./modules/sftp_vms"
+  source = "github.com/jaydendh/chloeta-terraform-modules//sftp_vms?ref=main"
 
   location                = var.location_eus
   subnet_confidential_id  = module.sftp_network.subnet_confidential_id
