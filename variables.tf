@@ -48,8 +48,8 @@ variable "vm_admin_username" {
   default     = "azureadmin"
 }
 
-variable "vm_admin_ssh_public_key" {
-  description = "SSH public key for all SFTP VMs"
+variable "vm_admin_password" {
+  description = "Admin password for all SFTP VMs"
   type        = string
   sensitive   = true
 }

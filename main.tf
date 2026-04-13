@@ -24,7 +24,7 @@ module "sftp_vms" {
   subnet_confidential_id  = module.sftp_network.subnet_confidential_id
   subnet_work_id          = module.sftp_network.subnet_work_id
   vm_admin_username       = var.vm_admin_username
-  vm_admin_ssh_public_key = var.vm_admin_ssh_public_key
+  vm_admin_password       = var.vm_admin_password
   vm_size                 = var.vm_size
   vm_image                = var.vm_image
   law_id                  = module.sftp_security.law_id
