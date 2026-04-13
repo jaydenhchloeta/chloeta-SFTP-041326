@@ -3,7 +3,7 @@
 
 subscription_id         = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 vm_admin_username       = "azureadmin"
-# vm_admin_password is auto-generated and stored in Key Vault — no need to set it here
+vm_admin_password       = "sourced-from-keeper"
 
 # Optional overrides (defaults are set in variables.tf)
 # vm_size                  = "Standard_B2s"
