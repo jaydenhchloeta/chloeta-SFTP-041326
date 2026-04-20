@@ -14,7 +14,7 @@ module "sftp_security" {
   source = "github.com/jaydenhchloeta/terraform-modules//azure/chloeta-sftp-environment/sftp_security?ref=master"
 
   location             = var.location_eus
-  rg_confidential_name = "rg-IT-sftp-confidential-eus"
+  rg_confidential_name = "rg-IT-sftp-confidential-eus-01"
 }
 
 module "sftp_vms" {
