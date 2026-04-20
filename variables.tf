@@ -5,9 +5,9 @@ variable "subscription_id" {
 }
 
 variable "location_eus" {
-  description = "Primary East US location"
+  description = "Primary location"
   type        = string
-  default     = "eastus"
+  default     = "westus2"
 }
 
 # ── Network CIDRs ─────────────────────────────────────────────────────────────
