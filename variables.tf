@@ -52,6 +52,7 @@ variable "vm_admin_password" {
   description = "Admin password for all SFTP VMs (sourced from Keeper)"
   type        = string
   sensitive   = true
+  default     = null
 }
 
 variable "vm_size" {
