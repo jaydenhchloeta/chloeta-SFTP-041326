@@ -7,7 +7,7 @@ variable "subscription_id" {
 variable "location_eus" {
   description = "Primary location"
   type        = string
-  default     = "westus2"
+  default     = "centralus"
 }
 
 # ── Network CIDRs ─────────────────────────────────────────────────────────────
