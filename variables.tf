@@ -58,7 +58,7 @@ variable "vm_admin_password" {
 variable "vm_size" {
   description = "VM size for SFTP virtual machines"
   type        = string
-  default     = "Standard_B2s"
+  default     = "Standard_D2s_v3"
 }
 
 variable "vm_image" {
